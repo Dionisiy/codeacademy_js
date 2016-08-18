@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	    var  friends ={};
+    friends.bill ={
+        firstName: "Bill",
+        lastName: "Shponyak",
+        nuber: 0952343445,
+        address:["kharkov","Alekceevka"],
+        };
+    friends.steve ={
+        firstName: "Steve",
+        lastName: "Novikov",
+        number: 0952343445,
+        address:["kharkov","Alekceevka"],
+        };
+        
+    var list = function(obj){
+        for(var key in obj) {
+        console.log(key);
+        }
+      };
+  list(friends);   
+ var search = function(name){
+        for(keys in friends){
+            if(friends[keys].firstName === name){
+                console.log(friends[keys]);
+                return friends[keys];
+               }
+            }
+     };
+ search(friends);
+
+	</script>
+</body>
+</html>
